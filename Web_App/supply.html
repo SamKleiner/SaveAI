@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Details - Dynamic Pricing POS System</title>
+        <link rel="stylesheet" href="item-details.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <div id="item-details-page">
+            <div class="container">
+                <header class="dashboard-header" style="justify-content: space-between; display: flex; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <a href="dashboard.html"><img src="assets/store.png" alt="Store Icon" class="logo"></a>
+                        <div><h2>At Earth's End</h2><span class="admin-badge">Admin View</span></div>
+                        <span class="plan-badge">Enterprise Plan</span>
+                    </div>
+                    <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                </header>
+    
+                <div class="tab-content">
+                    <div class="back-navigation">
+                        <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Back to Products</a>
+                    </div>
+                    
+                    <div class="product-header">
+                        <div class="product-image">
+                            <img src="assets/Beverages/DripCoffee.png" alt="Coffee">
+                        </div>
+                        <div class="product-info">
+                            <h1>Coffee</h1>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Current Price</span>
+                                    <span class="stat-value">$3.99</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Cost</span>
+                                    <span class="stat-value">$1.95</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Profit</span>
+                                    <span class="stat-value profit-positive">$2.04</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Margin</span>
+                                    <span class="stat-value profit-positive">51.13%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="action-btn optimize-btn"><i class="fas fa-magic"></i> Optimize Price</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs">
+                        <a href="summary.html" class="tab">Summary</a>
+                        <a href="supply.html" class="tab active">Supply</a>
+                        <a href="demand.html" class="tab">Demand</a>
+                        <a href="competitors.html" class="tab">Competitors</a>
+                    </div>
+
+                    <div class="cost-breakdown">
+                        <table class="cost-breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Cost</th>
+                                    <th>% of Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Coffee Beans</td>
+                                    <td>$0.85</td>
+                                    <td>43.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Labor</td>
+                                    <td>$0.75</td>
+                                    <td>38.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Utilities</td>
+                                    <td>$0.20</td>
+                                    <td>10.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging</td>
+                                    <td>$0.15</td>
+                                    <td>7.7%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td><strong>$1.95</strong></td>
+                                    <td><strong>100%</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-boxes"></i> Inventory Status</h3>
+                            <div class="inventory-status">
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Current Stock</span>
+                                    <span class="inventory-value">42 lbs</span>
+                                </div>
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Daily Usage</span>
+                                    <span class="inventory-value">3.5 lbs</span>
+                                </div>
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Reorder Point</span>
+                                    <span class="inventory-value">15 lbs</span>
+                                </div>
+                            </div>
+                            <div class="inventory-forecast">
+                                <div class="forecast-label">Stock Forecast</div>
+                                <div class="forecast-bar">
+                                    <div class="forecast-fill" style="width: 80%;"></div>
+                                </div>
+                                <div class="forecast-days">12 days remaining</div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-shipping-fast"></i> Supplier Information</h3>
+                            <div class="supplier-info">
+                                <div class="supplier">
+                                    <h4>Mountain Bean Co.</h4>
+                                    <div class="supplier-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-tag"></i>
+                                            <span>Price: $12.50/lb</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-truck"></i>
+                                            <span>Lead Time: 3-5 days</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-box"></i>
+                                            <span>Min Order: 25 lbs</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-small">Place Order</button>
+                                </div>
+                                <div class="supplier">
+                                    <h4>Fair Trade Coffee Inc.</h4>
+                                    <div class="supplier-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-tag"></i>
+                                            <span>Price: $14.25/lb</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-truck"></i>
+                                            <span>Lead Time: 2-3 days</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-box"></i>
+                                            <span>Min Order: 20 lbs</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-small">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Details - Dynamic Pricing POS System</title>
+    <link rel="stylesheet" href= "item-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <!-- Item Details Page -->
+    <div id="item-details-page">
+        <div class="container">
+            <header class="dashboard-header" style="justify-content: space-between; display: flex; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <a href="dashboard.html">
+                    <img src="assets/store.png" alt="Store Icon" class="logo">
+                  </a>
+                  <div>
+                    <h2>At Earth's End</h2>
+                    <span class="admin-badge">Admin View</span>
+                  </div>
+                  <span class="plan-badge">Enterprise Plan</span>
+                </div>
+                <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+              </header>
+            
+            <div class="back-navigation">
+                <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Back to Products</a>
+            </div>
+            
+            <div class="product-header">
+                <div class="product-image">
+                    <img src="/assets/Beverages/DripCoffee.png" alt="Coffee">
+                </div>
+                <div class="product-info">
+                    <h1>Coffee</h1>
+                    <div class="product-stats">
+                        <div class="stat">
+                            <span class="stat-label">Current Price</span>
+                            <span class="stat-value">$3.99</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$1.95</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Profit</span>
+                            <span class="stat-value profit-positive">$2.04</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Margin</span>
+                            <span class="stat-value profit-positive">51.13%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                    <button class="action-btn optimize-btn"><i class="fas fa-magic"></i> Optimize Price</button>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active">Summary</div>
+                <div class="tab">Supply</div>
+                <div class="tab">Demand</div>
+                <div class="tab">Competitors</div>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="summary-tab">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-chart-line"></i> Weekly Sales</h3>
+                            <div class="chart-container">
+                                <div class="bar-chart">
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 60%;" data-value="120"></div>
+                                        <div class="bar-label">
+                                            Mon<br>
+                                            <span class="bar-value">120 units</span><br>
+                                            <span class="bar-revenue">$478.80</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 75%;" data-value="150"></div>
+                                        <div class="bar-label">
+                                            Tue<br>
+                                            <span class="bar-value">150 units</span><br>
+                                            <span class="bar-revenue">$598.50</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 90%;" data-value="180"></div>
+                                        <div class="bar-label">
+                                            Wed<br>
+                                            <span class="bar-value">180 units</span><br>
+                                            <span class="bar-revenue">$718.20</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 80%;" data-value="160"></div>
+                                        <div class="bar-label">
+                                            Thu<br>
+                                            <span class="bar-value">160 units</span><br>
+                                            <span class="bar-revenue">$638.40</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 100%;" data-value="200"></div>
+                                        <div class="bar-label">
+                                            Fri<br>
+                                            <span class="bar-value">200 units</span><br>
+                                            <span class="bar-revenue">$798.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 85%;" data-value="170"></div>
+                                        <div class="bar-label">
+                                            Sat<br>
+                                            <span class="bar-value">170 units</span><br>
+                                            <span class="bar-revenue">$678.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 65%;" data-value="130"></div>
+                                        <div class="bar-label">
+                                            Sun<br>
+                                            <span class="bar-value">130 units</span><br>
+                                            <span class="bar-revenue">$518.70</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="chart-summary">
+                                <div class="summary-stat">
+                                    <span class="summary-label">Total Units</span>
+                                    <span class="summary-value">1,110</span>
+                                </div>
+                                <div class="summary-stat">
+                                    <span class="summary-label">Revenue</span>
+                                    <span class="summary-value">$4,428.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-clock"></i> Hourly Demand</h3>
+                            <div class="chart-container">
+                                <div class="line-chart">
+                                    <svg viewBox="0 0 300 100" class="chart">
+                                        <polyline
+                                            fill="none"
+                                            stroke="#d85e00"
+                                            stroke-width="2"
+                                            points="
+                                                0,80
+                                                25,70
+                                                50,50
+                                                75,20
+                                                100,30
+                                                125,40
+                                                150,35
+                                                175,25
+                                                200,10
+                                                225,30
+                                                250,45
+                                                275,60
+                                                300,75
+                                            "
+                                        />
+                                    </svg>
+                                    <div class="chart-labels">
+                                        <span>6AM</span>
+                                        <span>9AM</span>
+                                        <span>12PM</span>
+                                        <span>3PM</span>
+                                        <span>6PM</span>
+                                        <span>9PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peak-times">
+                                <div class="peak-time">
+                                    <i class="fas fa-star"></i>
+                                    <span>Peak Time: 10:00 AM - 12:00 PM</span>
+                                </div>
+                                <div class="peak-time">
+                                    <i class="fas fa-star"></i>
+                                    <span>Secondary Peak: 3:00 PM - 5:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-tags"></i> Price Elasticity</h3>
+                            <div class="chart-container">
+                                <div class="elasticity-chart">
+                                    <svg viewBox="0 0 300 100" class="chart">
+                                        <line x1="0" y1="100" x2="300" y2="0" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+                                        <polyline
+                                            fill="none"
+                                            stroke="#d85e00"
+                                            stroke-width="2"
+                                            points="
+                                                0,20
+                                                50,30
+                                                100,40
+                                                150,55
+                                                200,70
+                                                250,80
+                                                300,90
+                                            "
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="elasticity-summary">
+                                <p>Elasticity: <strong>-0.8</strong> (Inelastic)</p>
+                                <p>A 10% price increase would result in an estimated 8% decrease in demand.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card competitor-snapshot">
+                            <h3><i class="fas fa-search"></i> Competitor Snapshot</h3>
+                            <div class="competitor-range">
+                                <div class="range-chart">
+                                    <div class="range-bar">
+                                        <div class="range-marker" style="left: 45%;" title="Your price: $3.99"></div>
+                                    </div>
+                                </div>
+                                <div class="range-summary">
+                                    <div class="summary-item">
+                                        <span class="summary-label">Market Low:</span>
+                                        <span class="summary-value">$2.99</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="my-summary-label">Your Price:</span>
+                                        <span class="my-summary-value">$3.99</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Market High:   </span>
+                                        <span class="summary-value">$4.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-competitors">
+                                <div class="competitor">
+                                    <img src="assets/Beverages/Coffee Club.png" alt="Coffee Club" class="competitor-icon">
+                                    <span class="competitor-name">Small World</span>
+                                    <span class="competitor-price">$4.25</span>
+                                </div>
+                                <div class="competitor">
+                                    <img src="assets/Beverages/Starbucks.png" alt="Starbucks" class="competitor-icon">
+                                    <span class="competitor-name">Starbucks</span>
+                                    <span class="competitor-price">$3.99</span>
+                                </div>
+                                <div class="competitor">
+                                    <img src="assets/Beverages/Sakrid.png" alt="SAKRID Coffee" class="competitor-icon">
+                                    <span class="competitor-name">SAKRID Coffee'</span>
+                                    <span class="competitor-price">$3.49</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="supply-tab">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-dollar-sign"></i> Cost Breakdown</h3>
+                            <div class="cost-breakdown">
+                                <div class="cost-item">
+                                    <div class="cost-bar-container">
+                                        <div class="cost-label">Coffee Beans</div>
+                                        <div class="cost-bar">
+                                            <div class="cost-bar-fill" style="width: 43.6%;">$0.85</div>
+                                        </div>
+                                        <div class="cost-percentage">43.6%</div>
+                                    </div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-bar-container">
+                                        <div class="cost-label">Labor</div>
+                                        <div class="cost-bar">
+                                            <div class="cost-bar-fill" style="width: 38.5%;">$0.75</div>
+                                        </div>
+                                        <div class="cost-percentage">38.5%</div>
+                                    </div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-bar-container">
+                                        <div class="cost-label">Utilities</div>
+                                        <div class="cost-bar">
+                                            <div class="cost-bar-fill" style="width: 10.3%;">$0.20</div>
+                                        </div>
+                                        <div class="cost-percentage">10.3%</div>
+                                    </div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-bar-container">
+                                        <div class="cost-label">Packaging</div>
+                                        <div class="cost-bar">
+                                            <div class="cost-bar-fill" style="width: 7.7%;">$0.15</div>
+                                        </div>
+                                        <div class="cost-percentage">7.7%</div>
+                                    </div>
+                                </div>
+                                <div class="cost-total">
+                                    <div class="cost-bar-container">
+                                        <div class="cost-label">Total Cost</div>
+                                        <div class="cost-bar">
+                                            <div class="cost-bar-fill" style="width: 100%;">$1.95</div>
+                                        </div>
+                                        <div class="cost-percentage">100%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-boxes"></i> Inventory Status</h3>
+                            <div class="inventory-status">
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Current Stock</span>
+                                    <span class="inventory-value">42 lbs</span>
+                                </div>
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Daily Usage</span>
+                                    <span class="inventory-value">3.5 lbs</span>
+                                </div>
+                                <div class="inventory-item">
+                                    <span class="inventory-label">Reorder Point</span>
+                                    <span class="inventory-value">15 lbs</span>
+                                </div>
+                            </div>
+                            <div class="inventory-forecast">
+                                <div class="forecast-label">Stock Forecast</div>
+                                <div class="forecast-bar">
+                                    <div class="forecast-fill" style="width: 80%;"></div>
+                                </div>
+                                <div class="forecast-days">12 days remaining</div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-shipping-fast"></i> Supplier Information</h3>
+                            <div class="supplier-info">
+                                <div class="supplier">
+                                    <h4>Mountain Bean Co.</h4>
+                                    <div class="supplier-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-tag"></i>
+                                            <span>Price: $12.50/lb</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-truck"></i>
+                                            <span>Lead Time: 3-5 days</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-box"></i>
+                                            <span>Min Order: 25 lbs</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-small">Place Order</button>
+                                </div>
+                                <div class="supplier">
+                                    <h4>Fair Trade Coffee Inc.</h4>
+                                    <div class="supplier-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-tag"></i>
+                                            <span>Price: $14.25/lb</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-truck"></i>
+                                            <span>Lead Time: 2-3 days</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-box"></i>
+                                            <span>Min Order: 20 lbs</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-small">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="demand-tab">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-calendar-alt"></i> Daily Demand Pattern</h3>
+                            <div class="daily-demand-chart">
+                                <div class="heatmap">
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Monday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Tuesday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Wednesday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Thursday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Friday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Saturday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Sunday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.1);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heatmap-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 0.1);"></div>
+                                        <div class="legend-label">Low</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                        <div class="legend-label">Medium</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                        <div class="legend-label">High</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-users"></i> Customer Demographics</h3>
+                            <div class="demographics-chart">
+                                <div class="pie-chart">
+                                    <div class="pie-segment" style="--percentage: 45%; --color: #d85e00;">
+                                        <span class="pie-label">45%</span>
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 25%; --color: #ff9340;">
+                                        <span class="pie-label">25%</span>
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 20%; --color: #ffbb85;">
+                                        <span class="pie-label">20%</span>
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 10%; --color: #ffe0cc;">
+                                        <span class="pie-label">10%</span>
+                                    </div>
+                                </div>
+                                <div class="demographics-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #d85e00;"></div>
+                                        <div class="legend-label">Adults 25-40</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ff9340;"></div>
+                                        <div class="legend-label">Adults 41-65</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ffbb85;"></div>
+                                        <div class="legend-label">Young Adults 18-24</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ffe0cc;"></div>
+                                        <div class="legend-label">Seniors 65+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-chart-area"></i> Sales Forecast</h3>
+                            <div class="forecast-chart">
+                                <svg viewBox="0 0 300 100" class="chart">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#d85e00" stop-opacity="0.7" />
+                                            <stop offset="100%" stop-color="#d85e00" stop-opacity="0.1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path 
+                                        d="M0,80 L25,75 L50,70 L75,65 L100,60 L125,55 L150,50 L175,45 L200,40 L225,35 L250,30 L275,25 L300,20 L300,100 L0,100 Z" 
+                                        fill="url(#gradient)" />
+                                    <polyline
+                                        fill="none"
+                                        stroke="#d85e00"
+                                        stroke-width="2"
+                                        points="
+                                            0,80
+                                            25,75
+                                            50,70
+                                            75,65
+                                            100,60
+                                            125,55
+                                            150,50
+                                            175,45
+                                            200,40
+                                            225,35
+                                            250,30
+                                            275,25
+                                            300,20
+                                        "
+                                    />
+                                </svg>
+                            </div>
+                            <div class="forecast-summary">
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Current Weekly Sales</span>
+                                    <span class="forecast-value">1,110 units</span>
+                                </div>
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Projected Next Week</span>
+                                    <span class="forecast-value">1,178 units</span>
+                                </div>
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Growth Rate</span>
+                                    <span class="forecast-value trend-up">+6.1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="competitors-tab">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-globe"></i> Market Overview</h3>
+                            <div class="market-overview">
+                                <div class="market-stats">
+                                    <div class="market-stat">
+                                        <div class="stat-value">$3.87</div>
+                                        <div class="stat-label">Market Average</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">$2.99</div>
+                                        <div class="stat-label">Market Low</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">$4.50</div>
+                                        <div class="stat-label">Market High</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">Competitors</div>
+                                    </div>
+                                </div>
+                                <div class="market-position">
+                                    <h4>Your Market Position</h4>
+                                    <div class="position-chart">
+                                        <div class="position-line"></div>
+                                        <div class="position-marker" style="left: 10%;" data-label="McDonald's"></div>
+                                        <div class="position-marker" style="left: 25%;" data-label="Tim Hortons"></div>
+                                        <div class="position-marker" style="left: 35%;" data-label="Dunkin'"></div>
+                                        <div class="position-marker your-position" style="left: 50%;" data-label="Your Store"></div>
+                                        <div class="position-marker" style="left: 65%;" data-label="Peet's"></div>
+                                        <div class="position-marker" style="left: 75%;" data-label="Starbucks"></div>
+                                        <div class="position-marker" style="left: 90%;" data-label="Blue Bottle"></div>
+                                    </div>
+                                    <div class="position-label">Price Position</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-search-dollar"></i> Competitor Pricing Data</h3>
+                            <table class="competitors-table">
+                                <thead>
+                                    <tr>
+                                        <th>Competitor</th>
+                                        <th>Regular Coffee (12oz)</th>
+                                        <th>Price Trend</th>
+                                        <th>Last Updated</th>
+                                        <th>Price Difference</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Starbucks">Starbucks</td>
+                                        <td>$4.25</td>
+                                        <td><span class="trend-up"><i class="fas fa-arrow-up"></i> +$0.10</span></td>
+                                        <td>Today, 8:30 AM</td>
+                                        <td><span class="price-higher">+$0.26 (6.5%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Peet's">Peet's Coffee</td>
+                                        <td>$3.99</td>
+                                        <td><span class="trend-neutral"><i class="fas fa-equals"></i> $0.00</span></td>
+                                        <td>Yesterday, 3:15 PM</td>
+                                        <td><span class="price-equal">$0.00 (0.0%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Dunkin">Dunkin'</td>
+                                        <td>$3.49</td>
+                                        <td><span class="trend-down"><i class="fas fa-arrow-down"></i> -$0.15</span></td>
+                                        <td>Today, 6:45 AM</td>
+                                        <td><span class="price-lower">-$0.50 (12.5%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Coffee Bean">Coffee Bean</td>
+                                        <td>$4.15</td>
+                                        <td><span class="trend-up"><i class="fas fa-arrow-up"></i> +$0.05</span></td>
+                                        <td>2 days ago</td>
+                                        <td><span class="price-higher">+$0.16 (4.0%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Tim Hortons">Tim Hortons</td>
+                                        <td>$3.29</td>
+                                        <td><span class="trend-neutral"><i class="fas fa-equals"></i> $0.00</span></td>
+                                        <td>Today, 10:20 AM</td>
+                                        <td><span class="price-lower">-$0.70 (17.5%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Blue Bottle">Blue Bottle</td>
+                                        <td>$4.50</td>
+                                        <td><span class="trend-up"><i class="fas fa-arrow-up"></i> +$0.25</span></td>
+                                        <td>Yesterday, 2:00 PM</td>
+                                        <td><span class="price-higher">+$0.51 (12.8%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="Local Cafe">Local Cafe</td>
+                                        <td>$3.75</td>
+                                        <td><span class="trend-down"><i class="fas fa-arrow-down"></i> -$0.10</span></td>
+                                        <td>3 days ago</td>
+                                        <td><span class="price-lower">-$0.24 (6.0%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/api/placeholder/30/30" class="competitor-icon" alt="McDonalds">McDonald's</td>
+                                        <td>$2.99</td>
+                                        <td><span class="trend-neutral"><i class="fas fa-equals"></i> $0.00</span></td>
+                                        <td>Today, 9:00 AM</td>
+                                        <td><span class="price-lower">-$1.00 (25.1%)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach((tab, index) => {
+            tab.addEventListener('click', function() {
+                // Hide all tab panes
+                document.querySelectorAll('.tab-pane').forEach(pane => {
+                    pane.style.display = 'none';
+                });
+                
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Show corresponding tab pane
+                const tabPanes = document.querySelectorAll('.tab-pane');
+                if (tabPanes[index]) {
+                    tabPanes[index].style.display = 'block';
+                } else {
+                    // Default to first tab if index doesn't exist
+                    tabPanes[0].style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

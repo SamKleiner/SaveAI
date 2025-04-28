@@ -1,0 +1,8 @@
+fade the image in login to match first image
+
+change style of login / abt us / contact us to Trebuchet MS
+
+need to make a create account with request a demo - new page
+
+
+

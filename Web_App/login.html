@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Dynamic Pricing POS System</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+<!-- Login Page -->
+<div id="login-page">
+    <div class="container">
+        <header class="header">
+            <a href="index.html">
+                <img src="assets/Dynamic_logo.png" alt="Dynamic Pricing POS" class="logo">
+            </a>
+            <nav class="nav">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </header>
+        <div class="login-content">
+            <img src="assets/login-bg.png" alt="Store Icon" class="hero-bg">
+            <div class="login-container">
+                <h2 class="text-center" style="margin-bottom: 30px;">Login to Your Account</h2>
+                <form id="login-form" onsubmit="validateLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function validateLogin(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (username === "At Earth's End" && password === "Password") {
+            window.location.href = "dashboard.html";
+        } else {
+            alert('Invalid credentials. Please try again.');
+        }
+    }
+</script>
+</body>
+</html>

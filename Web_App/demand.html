@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Details - Dynamic Pricing POS System</title>
+        <link rel="stylesheet" href="item-details.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <div id="item-details-page">
+            <div class="container">
+                <header class="dashboard-header" style="justify-content: space-between; display: flex; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <a href="dashboard.html"><img src="assets/store.png" alt="Store Icon" class="logo"></a>
+                        <div><h2>At Earth's End</h2><span class="admin-badge">Admin View</span></div>
+                        <span class="plan-badge">Enterprise Plan</span>
+                    </div>
+                    <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                </header>
+    
+    
+                <div class="tab-content">
+                    <div class="back-navigation">
+                        <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Back to Products</a>
+                    </div>
+                    
+                    <div class="product-header">
+                        <div class="product-image">
+                            <img src="assets/Beverages/DripCoffee.png" alt="Coffee">
+                        </div>
+                        <div class="product-info">
+                            <h1>Coffee</h1>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Current Price</span>
+                                    <span class="stat-value">$3.99</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Cost</span>
+                                    <span class="stat-value">$1.95</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Profit</span>
+                                    <span class="stat-value profit-positive">$2.04</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Margin</span>
+                                    <span class="stat-value profit-positive">51.13%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="action-btn optimize-btn"><i class="fas fa-magic"></i> Optimize Price</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs">
+                        <a href="summary.html" class="tab">Summary</a>
+                        <a href="supply.html" class="tab">Supply</a>
+                        <a href="demand.html" class="tab active">Demand</a>
+                        <a href="competitors.html" class="tab">Competitors</a>
+                    </div>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="demand-tab"">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-calendar-alt"></i> Daily Demand Pattern</h3>
+                            <div class="daily-demand-chart">
+                                <div class="heatmap">
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Monday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Tuesday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Wednesday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Thursday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Friday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Saturday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.2);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.8);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="heatmap-row">
+                                        <div class="heatmap-label">Sunday</div>
+                                        <div class="heatmap-cells">
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.1);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.3);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.6);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.9);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.7);"></div>
+                                            <div class="heatmap-cell" style="background-color: rgba(216, 94, 0, 0.4);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heatmap-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 0.1);"></div>
+                                        <div class="legend-label">Low</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 0.5);"></div>
+                                        <div class="legend-label">Medium</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: rgba(216, 94, 0, 1.0);"></div>
+                                        <div class="legend-label">High</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-users"></i> Customer Demographics</h3>
+                            <div class="demographics-chart">
+                                <div class="pie-chart">
+                                    <div class="pie-segment" style="--percentage: 45%; --color: #d85e00;">
+                                        <!-- <span class="pie-label.label-1">45%</span> -->
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 25%; --color: #ff9340;">
+                                        <!-- <span class="pie-label.label-2">25%</span> -->
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 20%; --color: #ffbb85;">
+                                        <!-- <span class="pie-label.label-3">20%</span> -->
+                                    </div>
+                                    <div class="pie-segment" style="--percentage: 10%; --color: #ffe0cc;">
+                                        <!-- <span class="pie-label.label-4">10%</span> -->
+                                    </div>
+                                </div>
+                                <div class="demographics-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #d85e00;"></div>
+                                        <div class="legend-label">Adults 25-40</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ff9340;"></div>
+                                        <div class="legend-label">Adults 41-65</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ffbb85;"></div>
+                                        <div class="legend-label">Young Adults 18-24</div>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #ffe0cc;"></div>
+                                        <div class="legend-label">Seniors 65+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-card">
+                            <h3><i class="fas fa-chart-area"></i> Sales Forecast</h3>
+                            <div class="forecast-chart">
+                                <svg viewBox="0 0 300 100" class="chart">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#d85e00" stop-opacity="0.7" />
+                                            <stop offset="100%" stop-color="#d85e00" stop-opacity="0.1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path 
+                                        d="M0,80 L25,75 L50,70 L75,65 L100,60 L125,55 L150,50 L175,45 L200,40 L225,35 L250,30 L275,25 L300,20 L300,100 L0,100 Z" 
+                                        fill="url(#gradient)" />
+                                    <polyline
+                                        fill="none"
+                                        stroke="#d85e00"
+                                        stroke-width="2"
+                                        points="
+                                            0,80
+                                            25,75
+                                            50,70
+                                            75,65
+                                            100,60
+                                            125,55
+                                            150,50
+                                            175,45
+                                            200,40
+                                            225,35
+                                            250,30
+                                            275,25
+                                            300,20
+                                        "
+                                    />
+                                </svg>
+                            </div>
+                            <div class="forecast-summary">
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Current Weekly Sales</span>
+                                    <span class="forecast-value">1,110 units</span>
+                                </div>
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Projected Next Week</span>
+                                    <span class="forecast-value">1,178 units</span>
+                                </div>
+                                <div class="forecast-item">
+                                    <span class="forecast-label">Growth Rate</span>
+                                    <span class="forecast-value trend-up">+6.1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Details - Dynamic Pricing POS System</title>
+        <link rel="stylesheet" href="item-details.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <div id="item-details-page">
+            <div class="container">
+                <header class="dashboard-header" style="justify-content: space-between; display: flex; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <a href="dashboard.html"><img src="assets/store.png" alt="Store Icon" class="logo"></a>
+                        <div><h2>At Earth's End</h2><span class="admin-badge">Admin View</span></div>
+                        <span class="plan-badge">Enterprise Plan</span>
+                    </div>
+                    <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                </header>
+    
+    
+                <div class="tab-content">
+                    <div class="back-navigation">
+                        <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Back to Products</a>
+                    </div>
+                    
+                    <div class="product-header">
+                        <div class="product-image">
+                            <img src="assets/Beverages/DripCoffee.png" alt="Coffee">
+                        </div>
+                        <div class="product-info">
+                            <h1>Coffee</h1>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Current Price</span>
+                                    <span class="stat-value">$3.99</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Cost</span>
+                                    <span class="stat-value">$1.95</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Profit</span>
+                                    <span class="stat-value profit-positive">$2.04</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Margin</span>
+                                    <span class="stat-value profit-positive">51.13%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="action-btn optimize-btn"><i class="fas fa-magic"></i> Optimize Price</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tabs">
+                        <a href="summary.html" class="tab">Summary</a>
+                        <a href="supply.html" class="tab">Supply</a>
+                        <a href="demand.html" class="tab">Demand</a>
+                        <a href="competitors.html" class="tab active">Competitors</a>
+                    </div>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="competitors-tab">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-globe"></i> Market Overview</h3>
+                            <div class="market-overview">
+                                <div class="market-stats">
+                                    <div class="market-stat">
+                                        <div class="stat-value">$3.87</div>
+                                        <div class="stat-label">Market Average</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">$2.99</div>
+                                        <div class="stat-label">Market Low</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">$4.50</div>
+                                        <div class="stat-label">Market High</div>
+                                    </div>
+                                    <div class="market-stat">
+                                        <div class="stat-value">4</div>
+                                        <div class="stat-label">Competitors</div>
+                                    </div>
+                                </div>
+                                <div class="market-position">
+                                    <h4>Your Market Position</h4>
+                                    <div class="price-scale-bar">
+                                        <!-- <div class="price-extreme left">$2.99</div> -->
+                                        <div class="price-line">
+                                            <img src="assets/Beverages/McDonalds.png" class="price-dot" style="left: 0%;">
+                                            <img src="assets/Beverages/Coffee Club.png" class="price-dot" style="left: 31%;">
+                                            <img src="assets/Beverages/Sakrid.png" class="price-dot" style="left: 52%;">
+                                            <img src="assets/Beverages/Starbucks.png" class="price-dot" style="left: 100%;">
+                                            <img src="assets/store.png" class="price-dot your-dot" style="left: 74%;">
+                                        </div>
+                                        <!-- <div class="price-extreme right">$4.50</div> -->
+                                    </div>
+                                </div>
+                        
+                        <div class="dashboard-card full-width">
+                            <h3><i class="fas fa-search-dollar"></i> Competitor Pricing Data</h3>
+                            <table class="competitors-table">
+                                <thead>
+                                    <tr>
+                                        <th>Competitor</th>
+                                        <th>Regular Coffee (12oz)</th>
+                                        <th>Price Trend</th>
+                                        <th>Last Updated</th>
+                                        <th>Price Difference</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets/Beverages/Starbucks.png" class="competitor-icon" alt="Starbucks">Starbucks</td>
+                                        <td>$4.25</td>
+                                        <td><span class="trend-up"><i class="fas fa-arrow-up"></i> +$0.10</span></td>
+                                        <td>December 11, 2024, 8:30 AM</td>
+                                        <td><span class="price-higher">+$0.26 (6.5%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/Beverages/Sakrid.png" class="competitor-icon" alt="Peet's">SAKRID Coffee</td>
+                                        <td>$3.89</td>
+                                        <td><span class="trend-up"><i class="fas fa-arrow-up"></i> +$0.10</span></td>
+                                        <td>December 11, 2024, 8:30 AM</td>
+                                        <td><span class="price-higher">+$0.26 (6.5%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/Beverages/Coffee Club.png" class="competitor-icon" alt="Dunkin">Coffee Club</td>
+                                        <td>$3.29</td>
+                                        <td><span class="trend-neutral"><i class="fas fa-equals"></i> $0.00</span></td>
+                                        <td>Today, 10:20 AM</td>
+                                        <td><span class="price-equal">-$0.00 (0.0%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/Beverages/McDonalds.png" class="competitor-icon" alt="McDonalds">McDonalds</td>
+                                        <td>$2.99</td>
+                                        <td><span class="trend-down"><i class="fas fa-equals"></i> $0.30</span></td>
+                                        <td>Today, 9:00 AM</td>
+                                        <td><span class="price-lower">-$1.00 (25.1%)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
